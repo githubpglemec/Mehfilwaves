@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehfil Waves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="bg-video" autoplay muted loop playsinline>
+        <source src="./videojc.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Audio Player -->
+    <div class="audio-player">
+        <button id="playBtn" class="play-btn">▶</button>
+        <div class="time-display" id="timeDisplay">0:00 / 5:36</div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <button id="volumeBtn" class="volume-btn">🔊</button>
+        <button id="optionsBtn" class="options-btn">⋮</button>
+    </div>
+    
+    <!-- Audio Visualizer (NEW) -->
+    <div class="audio-visualizer">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    
+    <!-- Headphone Icon (Top Right) -->
+    <div class="headphone-icon">🎧</div>
+    
+    <!-- Main Title -->
+    <h1 class="title">MehfilWaves</h1>
+    
+    <!-- Description -->
+    <div class="description">
+        Mehfil Waves brings you a soothing blend of old Bollywood songs, playing softly like distant echoes from another room. Whether you're working, studying, or just unwinding, our ambient soundscape helps you stay focused while immersing you in a warm, nostalgic atmosphere. Tune in and let the music set the mood.
+    </div>
+    
+    <!-- Credits -->
+    <div class="credits">
+        Side project by<br>
+        mr.pg<br>
+        Designer &amp; Developer
+    </div>
+    
+
+  <!-- Imprint Text -->
+<div class="imprint">
+    <a href="imprint.html" style="color: white; text-decoration: none;">Imprints and Info</a>
+</div>
+    
+    <!-- Audio Element -->
+    <audio id="audioPlayer" src="./Assest/song.mp3"></audio>
+    
+    <!-- Volume Control Slider (Hidden by default) -->
+    <div class="volume-slider-container" id="volumeSlider">
+        <input type="range" min="0" max="100" value="100" class="volume-range" id="volumeRange">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
